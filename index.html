@@ -26,9 +26,40 @@
                 <a href="#why-us">Why Us</a>
                 <a href="#industries">Industries</a>
             </nav>
-            <a href="#contact" class="btn btn-navy nav-cta">Let's Connect <i class="ph ph-arrow-right"></i></a>
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-navy nav-cta">Let's Connect <i class="ph ph-arrow-right"></i></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-drawer">
+            <div class="mobile-nav-header">
+                <img src="logo.png" alt="Grovista Global" class="mobile-nav-logo">
+                <button class="mobile-nav-close" id="navClose" aria-label="Close menu">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                <a href="#home" class="mobile-nav-link"><i class="ph ph-house"></i><span>Home</span></a>
+                <a href="#overview" class="mobile-nav-link"><i class="ph ph-info"></i><span>About Us</span></a>
+                <a href="#services" class="mobile-nav-link"><i class="ph ph-squares-four"></i><span>Services</span></a>
+                <a href="#why-us" class="mobile-nav-link"><i class="ph ph-star"></i><span>Why Us</span></a>
+                <a href="#industries" class="mobile-nav-link"><i class="ph ph-buildings"></i><span>Industries</span></a>
+            </nav>
+            <div class="mobile-nav-footer">
+                <a href="#contact" class="mobile-nav-cta">
+                    Let's Connect
+                    <span class="btn-icon-gold" style="width:36px;height:36px;font-size:16px;"><i class="ph ph-arrow-right"></i></span>
+                </a>
+                <p class="mobile-nav-tagline">"Giving wings to your dreams"</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -175,10 +206,10 @@
         <div class="container">
             <div class="text-center mb-5 reveal">
                 <span class="section-tag"
-                    style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 13px;">OUR
+                    style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 24px;">OUR
                     SERVICES</span>
                 <h2
-                    style="font-family: var(--font-heading); font-size: 3rem; color: var(--color-accent-navy); font-weight: 700; margin-top: 10px;">
+                    style="font-family: var(--font-heading); font-size: 2.6rem; color: var(--color-accent-navy); font-weight: 700; margin-top: 10px;">
                     360&deg; Business Solutions</h2>
                 <p
                     style="color: #555; max-width: 600px; margin: 15px auto 0 auto; font-size: 1.05rem; line-height: 1.6;">
@@ -385,17 +416,17 @@
     <section id="industries" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Industries We Serve</span>
-                <h2>Empowering Businesses<br>Across Diverse Industries</h2>
+                <span class="section-tag" style="font-size: 24px;">Industries We Serve</span>
+                <h2 style="font-size: 2.6rem;">Empowering Businesses<br>Across Diverse Industries</h2>
             </div>
 
             <div class="industries-grid">
                 <div class="industry-card reveal">
-                    <div class="ind-content"><i class="ph ph-broadcast"></i><span>Telecom</span></div>
+                    <div class="ind-content"><i class="ph ph-users-three"></i><span>Human Resources &<br>Staffing</span>
+                    </div>
                 </div>
                 <div class="industry-card reveal" style="transition-delay: 0.1s;">
-                    <div class="ind-content"><i class="ph ph-buildings"></i><span>Real Estate &<br>Co-living</span>
-                    </div>
+                    <div class="ind-content"><i class="ph ph-broadcast"></i><span>Telecom</span></div>
                 </div>
                 <div class="industry-card reveal" style="transition-delay: 0.2s;">
                     <div class="ind-content"><i class="ph ph-bank"></i><span>Banking &<br>Financial</span></div>
@@ -404,22 +435,22 @@
                     <div class="ind-content"><i class="ph ph-bed"></i><span>Hospitality &<br>Facility</span></div>
                 </div>
                 <div class="industry-card reveal" style="transition-delay: 0.4s;">
-                    <div class="ind-content"><i class="ph ph-shopping-cart"></i><span>Retail &<br>E-commerce</span>
-                    </div>
-                </div>
-                <div class="industry-card reveal" style="transition-delay: 0.5s;">
                     <div class="ind-content"><i class="ph ph-laptop"></i><span>IT &<br>Technology</span></div>
                 </div>
-                <div class="industry-card reveal" style="transition-delay: 0.6s;">
-                    <div class="ind-content"><i class="ph ph-rocket-launch"></i><span>Startups &<br>MSMEs</span></div>
+                <div class="industry-card reveal" style="transition-delay: 0.5s;">
+                    <div class="ind-content"><i class="ph ph-music-notes"></i><span>Events &<br>Entertainment</span>
+                    </div>
                 </div>
-                <div class="industry-card reveal" style="transition-delay: 0.7s;">
+                <div class="industry-card reveal" style="transition-delay: 0.6s;">
                     <div class="ind-content"><i class="ph ph-graduation-cap"></i><span>Education &<br>Training</span>
                     </div>
                 </div>
-                <div class="industry-card reveal" style="transition-delay: 0.8s;">
-                    <div class="ind-content"><i class="ph ph-music-notes"></i><span>Events &<br>Entertainment</span>
+                <div class="industry-card reveal" style="transition-delay: 0.7s;">
+                    <div class="ind-content"><i class="ph ph-buildings"></i><span>Real Estate &<br>Co-living</span>
                     </div>
+                </div>
+                <div class="industry-card reveal" style="transition-delay: 0.8s;">
+                    <div class="ind-content"><i class="ph ph-rocket-launch"></i><span>Startups &<br>MSMEs</span></div>
                 </div>
             </div>
         </div>
@@ -429,7 +460,7 @@
     <section class="core-values-section">
         <div class="container text-center mb-5 reveal">
             <span class="section-tag"
-                style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 13px;">OUR
+                style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 24px;">OUR
                 CORE VALUES</span>
             <div
                 style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px; margin-bottom: 0px;">
@@ -440,7 +471,7 @@
                 <div style="height: 1px; width: 30px; background-color: var(--color-primary-gold);"></div>
             </div>
             <h2 class="cv-main-title mt-2 mb-3"
-                style="font-family: var(--font-heading); font-size: 3rem; color: #fff; font-weight: 700; line-height: 1.2;">
+                style="font-family: var(--font-heading); font-size: 2.6rem; color: #fff; font-weight: 700; line-height: 1.2;">
                 The Principles That <span style="color: var(--color-primary-gold);">Drive Us</span>
             </h2>
             <p style="color: #a0aec0; max-width: 700px; margin: 0 auto; font-size: 1.05rem;">
@@ -514,12 +545,13 @@
     <!-- Leadership -->
     <section id="leadership" class="section bg-white">
         <div class="container">
-            <div class="section-header reveal" style="max-width: 100%; text-align: left;">
+            <div class="section-header reveal" style="max-width: 100%; text-align: center;">
                 <div style="text-align: center; margin-bottom: 16px;">
-                    <span class="section-tag" style="text-transform: uppercase; letter-spacing: 2px;">Leadership
+                    <span class="section-tag"
+                        style="text-transform: uppercase; letter-spacing: 2px; font-size: 24px;">Leadership
                         Team</span>
                 </div>
-                <h2>Experienced Leaders. Strong Vision.</h2>
+                <h2 style="font-size: 2.6rem;">Experienced Leaders. Strong Vision.</h2>
             </div>
 
             <div class="leadership-grid">
@@ -568,10 +600,10 @@
     <section id="why-us" class="section bg-light-cream why-us-section">
         <div class="container text-center mb-5 reveal">
             <span class="section-tag"
-                style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 13px;">WHY
+                style="color: var(--color-primary-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 24px;">WHY
                 CHOOSE US?</span>
             <h2 class="why-main-title mt-2 mb-3"
-                style="font-family: var(--font-heading); font-size: 3rem; color: var(--color-accent-navy); font-weight: 700; line-height: 1.2;">
+                style="font-family: var(--font-heading); font-size: 2.6rem; color: var(--color-accent-navy); font-weight: 700; line-height: 1.2;">
                 Your Growth. Our Commitment.<br>
                 <span style="color: var(--color-primary-gold);">Together, We Deliver Excellence.</span>
             </h2>
@@ -715,8 +747,16 @@
                                 </div>
                             </div>
                             <div class="contact-item">
+                                <i class="ph ph-buildings"></i>
+                                <div>
+                                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary-gold); font-weight: 600; display: block; margin-bottom: 2px;">Corporate Ofc</span>
+                                    <p>Noida, UP — 201301</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
                                 <i class="ph ph-map-pin"></i>
                                 <div>
+                                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-primary-gold); font-weight: 600; display: block; margin-bottom: 2px;">Registered Office</span>
                                     <p>N22-2007, 20th Floor, Tower 22,<br>Sector 151, Noida, UP — 201301</p>
                                 </div>
                             </div>
@@ -732,15 +772,24 @@
                                 <input type="email" class="form-control" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" required>
-                                    <option value="" disabled selected>Service Interest</option>
-                                    <option value="Consulting">Consulting & Business</option>
-                                    <option value="BPO">BPO & Outsourcing</option>
-                                    <option value="HR">HR & Staffing</option>
-                                    <option value="IT">IT Support</option>
-                                    <option value="Field">Field Operations</option>
-                                    <option value="Events">Event Management</option>
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="serviceSelect" class="form-control" required>
+                                    <option value="" disabled selected>Select Service Required</option>
+                                    <option value="Consulting">Consulting & Business Services</option>
+                                    <option value="BPO">BPO & Outsourcing Services</option>
+                                    <option value="HR">Human Resources & Staffing</option>
+                                    <option value="IT">IT & Technical Support</option>
+                                    <option value="Field">Field & On-ground Support</option>
+                                    <option value="Event">Event Management Services</option>
+                                    <option value="Other">Other (Please specify)</option>
                                 </select>
+                            </div>
+                            <!-- Conditional "Other Service" text input -->
+                            <div class="form-group" id="otherServiceGroup" style="display: none;">
+                                <input type="text" id="otherServiceInput" class="form-control"
+                                    placeholder="Please specify your service">
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
@@ -756,10 +805,10 @@
     </section>
 
     <!-- Footer Section (Includes CTA) -->
-    <footer class="footer-section"
-        style="position: relative; background-color: var(--color-accent-navy); color: white; padding-top: 120px; margin-top: 60px;">
+    <!-- Footer Section -->
+    <footer class="footer-section">
         <!-- CTA Banner -->
-        <div class="container relative" style="position: absolute; top: -60px; left: 0; right: 0; z-index: 10;">
+        <div class="container relative cta-container-pos">
             <div class="cta-banner">
                 <div class="cta-left">
                     <h2>Ready to <span>Grow Your Business</span>?</h2>
@@ -796,8 +845,7 @@
 
                 <!-- Col 1: Logo and About -->
                 <div class="footer-col brand-col">
-                    <!-- Ensure you have this new logo available, or use a text fallback -->
-                    <img src="/logo.png" alt="Grovista Global" class="footer-logo-main">
+                    <img src="logo.png" alt="Grovista Global" class="footer-logo-main">
                     <h3 class="footer-brand-name">GROVISTA GLOBAL PVT LTD</h3>
                     <p class="footer-desc">A fast-growing business solutions and support services company delivering
                         excellence across industries.</p>
@@ -877,6 +925,20 @@
                             <div class="info-text">
                                 <span class="info-label">Status:</span>
                                 <span class="info-value status-active"><span class="dot"></span> Active</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <i class="ph ph-buildings"></i>
+                            <div class="info-text">
+                                <span class="info-label">Corporate Ofc:</span>
+                                <span class="info-value">Noida, UP — 201301</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <i class="ph ph-map-pin"></i>
+                            <div class="info-text">
+                                <span class="info-label">Registered Office:</span>
+                                <span class="info-value">N22-2007, 20th Floor, Tower 22, Sector 151, Noida, UP — 201301</span>
                             </div>
                         </div>
                     </div>
