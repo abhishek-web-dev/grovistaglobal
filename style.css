@@ -597,7 +597,8 @@ body.nav-open {
   align-items: center;
   padding-top: clamp(80px, 10vw, 120px);
   padding-bottom: clamp(40px, 5vw, 80px);
-  overflow-x: hidden;  /* only hide horizontal — never clip cards vertically */
+  overflow-x: hidden;
+  /* only hide horizontal — never clip cards vertically */
   background-image: url('assets/Hero_Banner.png');
   background-size: cover;
   background-position: center;
@@ -825,9 +826,17 @@ body.nav-open {
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* =====================
@@ -917,17 +926,59 @@ body.nav-open {
     font-size: 11px;
   }
 
-  .fc-1, .fc-2, .fc-3, .fc-4, .fc-5, .fc-6 {
+  .fc-1,
+  .fc-2,
+  .fc-3,
+  .fc-4,
+  .fc-5,
+  .fc-6 {
     display: flex;
   }
 
   /* Compact orbit ring for tablet */
-  .fc-1 { top: 0;     left: calc(50% - 65px); bottom: auto; right: auto; transform: none; }
-  .fc-2 { top: 110px; right: 5%; left: auto; bottom: auto; }
-  .fc-3 { top: 110px; left: 5%; right: auto; bottom: auto; }
-  .fc-4 { top: 310px; right: 5%; left: auto; bottom: auto; }
-  .fc-5 { top: 310px; left: 5%; right: auto; bottom: auto; }
-  .fc-6 { top: 420px; left: calc(50% - 65px); bottom: auto; right: auto; transform: none; }
+  .fc-1 {
+    top: 0;
+    left: calc(50% - 65px);
+    bottom: auto;
+    right: auto;
+    transform: none;
+  }
+
+  .fc-2 {
+    top: 110px;
+    right: 5%;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-3 {
+    top: 110px;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-4 {
+    top: 310px;
+    right: 5%;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-5 {
+    top: 310px;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-6 {
+    top: 420px;
+    left: calc(50% - 65px);
+    bottom: auto;
+    right: auto;
+    transform: none;
+  }
 }
 
 /* Mobile 768px */
@@ -992,12 +1043,49 @@ body.nav-open {
     font-size: 10.5px;
   }
 
-  .fc-1 { top: 0;     left: calc(50% - 61px); bottom: auto; right: auto; transform: none; }
-  .fc-2 { top: 100px; right: 3%; left: auto; bottom: auto; }
-  .fc-3 { top: 100px; left: 3%; right: auto; bottom: auto; }
-  .fc-4 { top: 285px; right: 3%; left: auto; bottom: auto; }
-  .fc-5 { top: 285px; left: 3%; right: auto; bottom: auto; }
-  .fc-6 { top: 385px; left: calc(50% - 61px); bottom: auto; right: auto; transform: none; }
+  .fc-1 {
+    top: 0;
+    left: calc(50% - 61px);
+    bottom: auto;
+    right: auto;
+    transform: none;
+  }
+
+  .fc-2 {
+    top: 100px;
+    right: 3%;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-3 {
+    top: 100px;
+    left: 3%;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-4 {
+    top: 285px;
+    right: 3%;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-5 {
+    top: 285px;
+    left: 3%;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-6 {
+    top: 385px;
+    left: calc(50% - 61px);
+    bottom: auto;
+    right: auto;
+    transform: none;
+  }
 }
 
 /* Small mobile 480px — 1:1 match to reference image */
@@ -1054,12 +1142,47 @@ body.nav-open {
   }
 
   /* Compact 6-card ring around center logo */
-  .fc-1 { top: 0;     left: calc(50% - 59px); bottom: auto; right: auto; }
-  .fc-2 { top: 95px;  right: 2px; left: auto; bottom: auto; }
-  .fc-3 { top: 95px;  left: 2px; right: auto; bottom: auto; }
-  .fc-4 { top: 270px; right: 2px; left: auto; bottom: auto; }
-  .fc-5 { top: 270px; left: 2px; right: auto; bottom: auto; }
-  .fc-6 { top: 365px; left: calc(50% - 59px); bottom: auto; right: auto; }
+  .fc-1 {
+    top: 0;
+    left: calc(50% - 59px);
+    bottom: auto;
+    right: auto;
+  }
+
+  .fc-2 {
+    top: 95px;
+    right: 2px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-3 {
+    top: 95px;
+    left: 2px;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-4 {
+    top: 270px;
+    right: 2px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-5 {
+    top: 270px;
+    left: 2px;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-6 {
+    top: 365px;
+    left: calc(50% - 59px);
+    bottom: auto;
+    right: auto;
+  }
 
   .hero-actions {
     flex-direction: column;
@@ -1114,12 +1237,47 @@ body.nav-open {
     font-size: 9.5px;
   }
 
-  .fc-1 { top: 0;     left: calc(50% - 54px); bottom: auto; right: auto; }
-  .fc-2 { top: 88px;  right: 0; left: auto; bottom: auto; }
-  .fc-3 { top: 88px;  left: 0; right: auto; bottom: auto; }
-  .fc-4 { top: 250px; right: 0; left: auto; bottom: auto; }
-  .fc-5 { top: 250px; left: 0; right: auto; bottom: auto; }
-  .fc-6 { top: 338px; left: calc(50% - 54px); bottom: auto; right: auto; }
+  .fc-1 {
+    top: 0;
+    left: calc(50% - 54px);
+    bottom: auto;
+    right: auto;
+  }
+
+  .fc-2 {
+    top: 88px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-3 {
+    top: 88px;
+    left: 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-4 {
+    top: 250px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+
+  .fc-5 {
+    top: 250px;
+    left: 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  .fc-6 {
+    top: 338px;
+    left: calc(50% - 54px);
+    bottom: auto;
+    right: auto;
+  }
 }
 
 
@@ -1527,11 +1685,12 @@ body.nav-open {
   justify-content: center;
   z-index: 2;
   margin-top: -10px;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.15);
 }
 
 .vm-center-emblem img {
   width: 240px;
-  margin-bottom: 0;
+  margin-bottom: 130px;
 }
 
 .vm-center-emblem span {
@@ -1566,7 +1725,8 @@ body.nav-open {
 
   /* Show emblem between cards on tablet */
   .vm-center-emblem {
-    order: -1; /* show logo above both cards */
+    order: -1;
+    /* show logo above both cards */
     width: 160px;
     height: 160px;
     margin: 0;
@@ -1599,7 +1759,8 @@ body.nav-open {
   }
 
   .vm-center-emblem {
-    display: none; /* hide on mobile to save space */
+    display: none;
+    /* hide on mobile to save space */
   }
 }
 
@@ -1774,6 +1935,7 @@ body.nav-open {
 }
 
 @media (max-width: 991px) {
+
   .service-item-new,
   .service-item-new.reverse {
     flex-direction: column;
@@ -1797,6 +1959,7 @@ body.nav-open {
 }
 
 @media (max-width: 576px) {
+
   .service-item-new,
   .service-item-new.reverse {
     gap: 20px;
@@ -3167,6 +3330,7 @@ body.nav-open {
    ===================== */
 
 @media (max-width: 768px) {
+
   /* Services, Industries, Why Us, Core Values inline-style headings */
   .section h2[style],
   .container h2[style],
