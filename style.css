@@ -1690,7 +1690,8 @@ body.nav-open {
 
 .vm-center-emblem img {
   width: 240px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
+  margin-right: 8px;
 }
 
 .vm-center-emblem span {
@@ -2511,6 +2512,18 @@ body.nav-open {
 .leader-card:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
+}
+
+.leader-card-centered {
+  grid-column: 1 / -1;
+  width: calc(50% - 16px);
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .leader-card-centered {
+    width: 100%;
+  }
 }
 
 .leader-img {
