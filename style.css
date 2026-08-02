@@ -111,7 +111,7 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   display: block;
 }
@@ -1715,7 +1715,7 @@ body.nav-open {
 @media (max-width: 991px) {
   .vm-cards-wrapper {
     flex-direction: column;
-    gap: 70px;
+    gap: 120px;
     align-items: center;
   }
 
@@ -1726,15 +1726,18 @@ body.nav-open {
 
   /* Show emblem between cards on tablet */
   .vm-center-emblem {
-    order: -1;
-    /* show logo above both cards */
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: auto;
     margin: 0;
+    box-shadow: none;
+    /* Remove shadow if it looks weird on mobile */
   }
 
   .vm-center-emblem img {
-    width: 140px;
+    width: 345px;
+    margin-bottom: 0;
+    margin-right: 0;
+    transform: translateY(-40px);
   }
 }
 
@@ -1759,10 +1762,7 @@ body.nav-open {
     padding: 50px 20px 32px;
   }
 
-  .vm-center-emblem {
-    display: none;
-    /* hide on mobile to save space */
-  }
+
 }
 
 @media (max-width: 480px) {
