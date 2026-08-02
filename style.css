@@ -2974,10 +2974,7 @@ body.nav-open {
 
 /* Company Info Card */
 .company-info-card {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 24px;
+  padding: 0;
 }
 
 .info-row {
