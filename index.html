@@ -792,16 +792,16 @@
                     <div class="contact-form-container">
                         <form id="contactForm">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" id="contactName" name="name" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="Phone Number" required>
                             </div>
                             <div class="form-group">
-                                <select id="serviceSelect" class="form-control" required>
+                                <select id="serviceSelect" name="service" class="form-control" required>
                                     <option value="" disabled selected>Select Service Required</option>
                                     <option value="HR">Human Resources & Staffing</option>
                                     <option value="BPO">BPO & Outsourcing Services</option>
@@ -819,13 +819,13 @@
                             </div>
                             <!-- Conditional "Other Service" text input -->
                             <div class="form-group" id="otherServiceGroup" style="display: none;">
-                                <input type="text" id="otherServiceInput" class="form-control"
+                                <input type="text" id="otherServiceInput" name="other_service" class="form-control"
                                     placeholder="Please specify your service">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message <i
+                            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">Send Message <i
                                     class="ph ph-paper-plane-right"></i></button>
                         </form>
                     </div>

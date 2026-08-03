@@ -169,4 +169,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 7. FormSubmit Form Handling ---
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('contactSubmitBtn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const service = document.getElementById('serviceSelect').value;
+            const otherService = document.getElementById('otherServiceInput').value;
+            const message = document.getElementById('contactMessage').value;
+
+            fetch("https://formsubmit.co/ajax/info@grovistaglobal.in", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _cc: "abhinamdev641@gmail.com,sanjayrazdan11@gmail.com",
+                    _subject: "New Contact Form Submission - GroVista Global",
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    service: service === 'Other' ? `Other: ${otherService}` : service,
+                    message: message
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    submitBtn.innerHTML = 'Sent Successfully!';
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        contactForm.reset();
+                        // Reset 'Other' service field visibility
+                        if (typeof otherServiceGroup !== 'undefined' && otherServiceGroup) {
+                            otherServiceGroup.style.display = 'none';
+                            document.getElementById('otherServiceInput').required = false;
+                            document.getElementById('otherServiceInput').value = '';
+                        }
+                    }, 3000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    submitBtn.innerHTML = 'Error! Try Again';
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                });
+        });
+    }
+
 });
