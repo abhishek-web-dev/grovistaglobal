@@ -205,6 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
             })
                 .then(response => response.json())
                 .then(data => {
+                    if (data.success === "false" || data.success === false) {
+                        throw new Error(data.message || "Form submission failed");
+                    }
                     submitBtn.innerHTML = 'Sent Successfully!';
                     setTimeout(() => {
                         submitBtn.innerHTML = originalText;
