@@ -223,6 +223,7 @@ img {
   text-decoration: none;
   box-shadow: 0 10px 20px rgba(11, 31, 58, 0.2);
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .btn-navy-cta:hover {
@@ -2838,6 +2839,10 @@ body.nav-open {
   font-size: 28px;
 }
 
+.cta-right {
+  flex-shrink: 0;
+}
+
 /* Footer Grid */
 .footer-grid {
   display: grid;
@@ -3092,7 +3097,7 @@ body.nav-open {
   z-index: 10;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   .cta-banner {
     padding: 24px 32px;
     gap: 16px;
