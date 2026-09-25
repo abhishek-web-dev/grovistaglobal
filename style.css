@@ -2785,7 +2785,7 @@ body.nav-open {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(212, 175, 55, 0.3);
   color: var(--color-text-primary);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 24px;
 }
 
@@ -3105,7 +3105,7 @@ body.nav-open {
 
 @media (max-width: 1024px) {
   .footer-section {
-    padding-top: 260px;
+    padding-top: 340px;
   }
 
   .footer-grid {
@@ -3130,7 +3130,7 @@ body.nav-open {
 
 @media (max-width: 768px) {
   .footer-section {
-    padding-top: 250px;
+    padding-top: 340px;
   }
 
   .footer-grid {
@@ -3189,7 +3189,7 @@ body.nav-open {
 
 @media (max-width: 576px) {
   .footer-section {
-    padding-top: 260px;
+    padding-top: 340px;
   }
 
   .footer-grid {
@@ -3255,7 +3255,7 @@ body.nav-open {
 
 @media (max-width: 375px) {
   .footer-section {
-    padding-top: 270px;
+    padding-top: 340px;
   }
 
   .cta-banner {
