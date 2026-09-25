@@ -3093,24 +3093,47 @@ body.nav-open {
 }
 
 @media (max-width: 1200px) {
-  .cta-middle {
-    padding: 0 20px;
-    gap: 20px;
+  .cta-banner {
+    padding: 24px 32px;
+    gap: 16px;
   }
-
+  .cta-left h2 {
+    font-size: 1.8rem;
+  }
+  .cta-left p {
+    font-size: 14px;
+  }
+  .cta-middle {
+    padding: 0 16px;
+    gap: 16px;
+  }
+  .cta-feature .icon-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+  .cta-feature {
+    font-size: 13px;
+  }
+  .cta-right .btn-navy-cta {
+    padding: 10px 10px 10px 24px;
+    font-size: 15px;
+  }
   .footer-grid {
     gap: 32px;
   }
 }
 
 @media (max-width: 1024px) {
-  .footer-section {
-    padding-top: 340px;
-  }
-
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-section {
+    padding-top: 340px;
   }
 
   .cta-banner {
